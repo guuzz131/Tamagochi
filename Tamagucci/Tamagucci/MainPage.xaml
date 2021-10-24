@@ -67,12 +67,12 @@
                 <ColumnDefinition Width="75"/>
                 <ColumnDefinition Width="75"/>
             </Grid.ColumnDefinitions>
-            <Label Text="What does a mortal like you offer..." TextColor="OrangeRed" Grid.Column="0" Grid.ColumnSpan="5"  TranslationY="-20" TranslationX="100" FontAttributes="Bold,Italic" ScaleY="1"  />
-            <Button Grid.Column="0" Text="Praise" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Prayer" CornerRadius="150" BackgroundColor="AliceBlue"/>
-            <Button Grid.Column="1" Text="Blood" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Blood" CornerRadius="150" BackgroundColor="AliceBlue"/>
-            <Button Grid.Column="2" Text="Sheep" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Feed" CornerRadius="150" BackgroundColor="AliceBlue"/>
-            <Button Grid.Column="3" Text="Perfor-mance" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Show" CornerRadius="150" BackgroundColor="AliceBlue"/>
-            <Button Grid.Column="4" Text="Sacri- fice" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Sacrifice" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            <Label Text="What does a mortal like you offer..." TextColor="Orange" Grid.Column="0" Grid.ColumnSpan="5"  TranslationY="-20" TranslationX="100" FontAttributes="Bold,Italic" ScaleY="1"  />
+            <Button Grid.Column="0" Text="Praise" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Prayer" CornerRadius="150" BackgroundColor="AliceBlue" TranslationY="0"/>
+            <Button Grid.Column="1" Text="Blood" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Blood" CornerRadius="150" BackgroundColor="AliceBlue" TranslationY="0"/>
+            <Button Grid.Column="2" Text="Sheep" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Feed" CornerRadius="150" BackgroundColor="AliceBlue" TranslationY="0"/>
+            <Button Grid.Column="3" Text="Perfor-mance" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Show" CornerRadius="150" BackgroundColor="AliceBlue" TranslationY="0"/>
+            <Button Grid.Column="4" Text="Sacri- fice" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Sacrifice" CornerRadius="150" BackgroundColor="AliceBlue" TranslationY="0"/>
             
         </Grid>
         <Image Source="LightEffect.png" TranslationX="0" TranslationY="-800" ScaleX="5" ScaleY="5" x:Name="DefeatIMG" IsVisible="false"/>

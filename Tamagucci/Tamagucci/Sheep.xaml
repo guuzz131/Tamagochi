@@ -22,7 +22,7 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="Sheep.gif" Grid.Column="0" Grid.Row="0" TranslationX="-200" Scale="2" x:Name="Sheep1"/>
                 <Image Source="Sheep.gif" Grid.Column="4" Grid.Row="0" TranslationX="-500" Scale="2" x:Name="Sheep2"/>
-                <Image Source="Sheep.gif" Grid.Column="0" Grid.Row="2" TranslationX="0" Scale="2" x:Name="Sheep3"/>
+                <Image Source="Sheep.gif" Grid.Column="0" Grid.Row="2" TranslationX="-500" Scale="2" x:Name="Sheep3"/>
                 <Button Grid.Column="0" Grid.Row="0" TranslationX="-200" Scale="2" x:Name="SheepBtn1" Opacity="0" Clicked="SheepBtn1_Clicked"/>
                 <Button Grid.Column="4" Grid.Row="0" TranslationX="-500" Scale="2" x:Name="SheepBtn2" Opacity="0" Clicked="SheepBtn2_Clicked"/>
                 <Button Grid.Column="0" Grid.Row="2" TranslationX="-500" Scale="2" x:Name="SheepBtn3" Opacity="0" Clicked="SheepBtn3_Clicked"/>

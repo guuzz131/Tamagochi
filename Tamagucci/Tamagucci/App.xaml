@@ -5,13 +5,13 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="DodgerBlue"/>
+                <Setter Property="BarBackgroundColor" Value="SteelBlue"/>
             </Style>
             <Style TargetType="Label">
-                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="TextColor" Value="#f6de56"/>
             </Style>
             <Style TargetType="Button">
-                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderColor" Value="Orange"/>
                 <Setter Property="BorderWidth" Value="4"/>
             </Style>
         </ResourceDictionary>

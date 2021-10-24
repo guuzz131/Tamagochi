@@ -107,8 +107,8 @@ namespace Tamagucci
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (!isPlayingGame)
-            {
+            //if ()
+            //{
                 var creatureDataStore = DependencyService.Get<Interface1<CreatureStats>>();
 
                 MyCreature.Hunger -= .1f;
@@ -146,7 +146,7 @@ namespace Tamagucci
                 creatureDataStore.UpdateItem(MyCreature);
 
                 
-            }
+            //}
         }
 
         
@@ -177,7 +177,7 @@ namespace Tamagucci
         }
         private void Button_Clicked_Sacrifice(object sender, EventArgs e)
         {
-            MyCreature.Stimulated -= .2f;
+            MyCreature.Stimulated += .2f;
             if (MyCreature.Stimulated > 1)
             {
                 MyCreature.Stimulated = 1;
@@ -278,6 +278,9 @@ namespace Tamagucci
             DefeatIMG.IsVisible = false;
             DefeatTXT.IsVisible = false;
             Retry.IsVisible = false;
+            Clouds.Opacity = 1;
+
+            UpdateText();
         }
     }
 }
