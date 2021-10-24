@@ -40,7 +40,7 @@ namespace Tamagucci
 
             var timer = new Timer
             {
-                Interval = 1000 * 2,
+                Interval = 1000 * 20,
                 AutoReset = true,
             };
             timer.Elapsed += Timer_Elapsed;
@@ -60,21 +60,21 @@ namespace Tamagucci
             }
 
             double timeAsleep = Preferences.Get("TimeAsleep", (double)0);
-
+            /*
             MyCreature.Loneliness = 1;
             MyCreature.Hunger = 1;
             MyCreature.Boredom = 1;
             MyCreature.Thirst = 1;
             MyCreature.Tired = 1;
-            MyCreature.Stimulated = 1;
+            MyCreature.Stimulated = 1;*/
 
-            /*
+            
             MyCreature.Loneliness -= (float)timeAsleep * .1f;
             MyCreature.Hunger -= (float)timeAsleep * .1f;
             MyCreature.Boredom -= (float)timeAsleep * .1f;
             MyCreature.Thirst -= (float)timeAsleep * .1f;
             MyCreature.Tired += (float)timeAsleep * .1f;
-            MyCreature.Stimulated -= (float)timeAsleep * .1f;*/
+            MyCreature.Stimulated -= (float)timeAsleep * .1f;
 
             if (MyCreature.Hunger < 0)
             {
