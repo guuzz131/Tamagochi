@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagucci.BloodPage"
+             BackgroundImageSource="Field.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="God.png" TranslationY="30"/>
+            <Grid Padding="5,0,0,10" TranslationY="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="BlackKnight.png" Grid.Column="2" Grid.Row="2" Scale="4" TranslationX="0" TranslationY="0" />
+                <Image Source="BlackKnightLeg1.png" Grid.Column="2" Grid.Row="3" Scale="4" TranslationX="0" TranslationY="-80" x:Name="Leg1"/>
+                <Image Source="BlackKnightLeg2.png" Grid.Column="2" Grid.Row="3" Scale="4" TranslationX="0" TranslationY="-81" x:Name="Leg2"/>
+                <Image Source="BlackKnightArm1.png" Grid.Column="2" Grid.Row="3" Scale="4" TranslationX="0" TranslationY="-80" x:Name="Arm1"/>
+                <Image Source="BlackKnightArm2.png" Grid.Column="2" Grid.Row="3" Scale="4" TranslationX="0" TranslationY="-81" x:Name="Arm2"/>
+
+                <Button Grid.Column="2" Grid.Row="2" TranslationX="35" TranslationY="-50" Scale=".7" Opacity="0" Clicked="Button_Clicked"/>
+                <Button Grid.Column="2" Grid.Row="2" TranslationX="-70" TranslationY="-40" ScaleY="1" ScaleX=".7" Opacity="0" Clicked="Button_Clicked_1"/>
+                <Button Grid.Column="2" Grid.Row="3" TranslationX="10" TranslationY="10" ScaleY="1" ScaleX=".7" Opacity="0" Clicked="Button_Clicked_2"/>
+                <Button Grid.Column="2" Grid.Row="3" TranslationX="-50" TranslationY="10" ScaleY="1" ScaleX=".7" Opacity="0" Clicked="Button_Clicked_3"/>
+
+                <Image Source="LightEffect.png" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" TranslationX="-40" TranslationY="0" ScaleX="10" ScaleY="3" IsVisible="false" x:Name="WonIMG"/>
+                <Label Text="GOD'S THIRST IS DECREASED            THANK YOU MORTAL" HorizontalTextAlignment="Center" TextColor="red" FontAttributes="Bold" FontSize="Title" Grid.Column="1" Grid.Row="1" TranslationY="7" Grid.ColumnSpan="5" x:Name="WonTXT" TranslationX="-15" IsVisible="false"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

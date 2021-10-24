@@ -2,50 +2,49 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 
 namespace Tamagucci
 {
     public class LocalCreatureStore : Interface1<CreatureStats>
     {
-        public Task<bool> CreateItem(CreatureStats item)
-        {
-            string creatureAsText = JsonConvert.SerializeObject(item);
-            
-            Preferences.Set("MyCreature", creatureAsText);
+		public bool CreateItem(CreatureStats item)
+		{
+			string creatureAsText = JsonConvert.SerializeObject(item);
 
-            return Task.FromResult(true);
-        }
+			Preferences.Set("MyCreature", creatureAsText);
 
-        public Task<bool> DeleteItem(CreatureStats item)
-        {
-            Preferences.Remove("MyCreature");
+			return true;
+		}
 
-            return Task.FromResult(true);
-        }
+		public bool DeleteItem(CreatureStats item)
+		{
+			Preferences.Remove("MyCreature");
 
-        public Task<CreatureStats> ReadItem()
-        {
-            string creatureAsText = Preferences.Get("MyCreature", "");
+			return true;
+		}
 
-            CreatureStats creatureFromText = JsonConvert.DeserializeObject<CreatureStats>(creatureAsText);
+		public CreatureStats ReadItem()
+		{
+			string creatureAsText = Preferences.Get("MyCreature", "");
 
-            return Task.FromResult(creatureFromText);
-        }
+			CreatureStats creatureFromText = JsonConvert.DeserializeObject<CreatureStats>(creatureAsText);
 
-        public Task<bool> UpdateItem(CreatureStats item)
-        {
-            if (Preferences.ContainsKey("MyCreature"))
-            {
-                string creatureAsText = JsonConvert.SerializeObject(item);
+			return creatureFromText;
+		}
 
-                Preferences.Set("MyCreature", creatureAsText);
+		public bool UpdateItem(CreatureStats item)
+		{
+			if (Preferences.ContainsKey("MyCreature"))
+			{
+				string creatureAsText = JsonConvert.SerializeObject(item);
 
-                return Task.FromResult(true);
-            }
+				Preferences.Set("MyCreature", creatureAsText);
 
-            return Task.FromResult(false);
-        }
-    }
+				return true;
+			}
+
+			return false;
+		}
+	}
 }

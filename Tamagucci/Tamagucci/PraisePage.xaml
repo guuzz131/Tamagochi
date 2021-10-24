@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagucci.PraisePage"
+             BackgroundImageSource="Field.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="God.png" TranslationY="30"/>
+            <Grid Padding="5,0,0,10" TranslationY="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Prayer1.png" Grid.Column="0" Grid.Row="0" TranslationY="-500" TranslationX="10" Scale="1" x:Name="Prayer1"/>
+                <Image Source="Prayer2.png" Grid.Column="1" Grid.Row="0" TranslationY="-500" TranslationX="10" Scale="1" x:Name="Prayer2"/>
+                <Image Source="Prayer3.png" Grid.Column="2" Grid.Row="0" TranslationY="-500" TranslationX="10" Scale="1" x:Name="Prayer3"/>
+                <Image Source="Prayer4.png" Grid.Column="3" Grid.Row="0" TranslationY="-500" TranslationX="10" Scale="1" x:Name="Prayer4"/>
+                
+                <Button Grid.Column="0" Grid.Row="3" TranslationX="10" TranslationY="0" Scale="1" x:Name="Prayer1Btn" Clicked="Prayer1_Clicked" IsEnabled="True" />
+                <Button Grid.Column="1" Grid.Row="3" TranslationX="10" TranslationY="0" Scale="1" x:Name="Prayer2Btn" Clicked="Prayer2_Clicked" IsEnabled="True"/>
+                <Button Grid.Column="2" Grid.Row="3" TranslationX="10" TranslationY="0" Scale="1" x:Name="Prayer3Btn" Clicked="Prayer3_Clicked" IsEnabled="True"/>
+                <Button Grid.Column="3" Grid.Row="3" TranslationX="10" TranslationY="0" Scale="1" x:Name="Prayer4Btn" Clicked="Prayer4_Clicked" IsEnabled="True"/>
+                
+                <Image Source="Prayer1.png" Grid.Column="0" Grid.Row="3" TranslationY="0" TranslationX="10" Scale="1" InputTransparent="True"/>
+                <Image Source="Prayer2.png" Grid.Column="1" Grid.Row="3" TranslationY="0" TranslationX="10" Scale="1" InputTransparent="True"/>
+                <Image Source="Prayer3.png" Grid.Column="2" Grid.Row="3" TranslationY="0" TranslationX="10" Scale="1" InputTransparent="True"/>
+                <Image Source="Prayer4.png" Grid.Column="3" Grid.Row="3" TranslationY="0" TranslationX="10" Scale="1" InputTransparent="True"/>
+
+
+                <Image Source="LightEffect.png" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" TranslationX="-40" TranslationY="0" ScaleX="10" ScaleY="3" x:Name="WonImgPrayer" IsVisible="false"/>
+                <Label Text="GOD FEELS RESPECTED            THANK YOU MORTAL" HorizontalTextAlignment="Center" TextColor="red" FontAttributes="Bold" FontSize="Title" Grid.Column="0" Grid.Row="1" TranslationY="7" Grid.ColumnSpan="5" x:Name="WonTxtPrayer" IsVisible="false"/>
+
+                <Label Text="0/10" FontSize="40" Grid.Column="1" Grid.Row="3" FontAttributes="Bold" TextColor="White" TranslationY="80" TranslationX="70" x:Name="Score"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

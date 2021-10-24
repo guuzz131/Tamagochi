@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tamagucci.PerformancePage"
+             BackgroundImageSource="Field.jpg">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="God.png" TranslationY="30"/>
+            <Grid Padding="5,0,0,10" TranslationY="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="75"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+
+
+                <Image Source="LightEffect.png" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" TranslationX="-40" TranslationY="0" ScaleX="10" ScaleY="3"/>
+                <Label Text="GOD DEMANDS YOU TO            SHAKE YOUR DEVICE" HorizontalTextAlignment="Center" TextColor="red" FontAttributes="Bold" FontSize="Title" Grid.Column="1" Grid.Row="1" TranslationY="7" Grid.ColumnSpan="5" x:Name="GodTxt" TranslationX="-15"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

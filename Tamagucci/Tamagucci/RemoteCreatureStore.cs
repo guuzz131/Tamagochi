@@ -8,6 +8,7 @@ using Xamarin.Essentials;
 
 namespace Tamagucci
 {
+    /*
     class RemoteCreatureStore : Interface1<CreatureStats>
     {
         private HttpClient client = new HttpClient();
@@ -83,5 +84,5 @@ namespace Tamagucci
             
             return true;
         }
-    }
+    }*/
 }

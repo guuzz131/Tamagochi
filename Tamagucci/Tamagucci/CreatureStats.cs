@@ -33,15 +33,15 @@ namespace Tamagucci
         public string HungerText => Hunger switch
         {
             >= 1.0f => "God is SOOO full",
-            > 0.5f => "God is enjoying the sacrifices",
-            > 0.0f => "God needs sacrifices",
-            .0f => "God is dying",
+            > 0.6f => "God is feasting on the sheep",
+            > 0.0f => "God needs sheep",
+            .0f => "God is DYING of hunger",
             _ => throw new Exception("Impossible")
         };
         public string ThirstText => Thirst switch
         {
             >= 1.0f => "God is VERY hydrated",
-            > 0.5f => "God is hydrated",
+            > 0.6f => "God is hydrated",
             > 0.0f => "God needs blood",
             .0f => "God really needs BLOODDDD",
             _ => throw new Exception("Impossible")
@@ -49,7 +49,7 @@ namespace Tamagucci
         public string BoredomText => Boredom switch
         {
             >= 1.0f => "God REALLY enjoys the show",
-            > 0.5f => "God likes the show",
+            > 0.6f => "God likes the show",
             > 0.0f => "God needs a show",
             .0f => "God is EXTREMELY bored",
             _ => throw new Exception("Impossible")
@@ -57,15 +57,15 @@ namespace Tamagucci
         public string LonelinessText => Loneliness switch
         {
             >= 1.0f => "God FEELS like a real god",
-            > 0.5f => "God feels praised",
+            > 0.6f => "God feels praised",
             > 0.0f => "God needs praise",
-            .0f => "God feels left alone",
+            .0f => "God feels VERY lonely",
             _ => throw new Exception("Impossible")
         };
         public string StimulatedText => Stimulated switch
         {
             >= 1.0f => "God likes the other mortal's pressence",
-            > 0.5f => "God isn't bothered by the other mortal",
+            > 0.6f => "God isn't bothered by the other mortal",
             > 0.0f => "God is bothered by the other mortal",
             .0f => "God will KILL the everyone if the other mortal doesn't leave",
             _ => throw new Exception("Impossible")
@@ -73,7 +73,7 @@ namespace Tamagucci
         public string TiredText => Tired switch
         {
             >= 1.0f => "God likes the mortal's pressence",
-            > 0.5f => "God isn't bothered by the mortal",
+            > 0.6f => "God isn't bothered by the mortal",
             > 0.0f => "God is bothered by the mortal",
             .0f => "God will KILL the mortal if he doesn't leave",
             _ => throw new Exception("Impossible")

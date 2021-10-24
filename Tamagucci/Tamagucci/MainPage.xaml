@@ -3,40 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tamagucci.MainPage"
              BackgroundImageSource="Field.jpg">
-    
-    <StackLayout>
+
+    <!--<StackLayout>
         
-            <!--<Frame BackgroundColor="#22dd33" Padding="24" CornerRadius="0">
+            <Frame BackgroundColor="#22dd33" Padding="24" CornerRadius="0">
             <Label Text="Welcome to Shrek" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontAttributes="Bold"/>
         </Frame>-->
+        <!--
         <Image Source="StonePlate.jpg" TranslationY="400" TranslationX="-55" ScaleY="1.5" ScaleX=".70"/>
         
-        <Label Text="{Binding MyCreature.Hunger, Mode.OneWay}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="50"/>
-        <Label Text="God is Lonely" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="30"/>
-        <Label Text="God is Thirsty" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="10"/>
-        <Label Text="God is Bored" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-10"/>
-        <Label Text="God is Tired" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-30"/>
-        <Label Text="God needs Prayers" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-50"/>
+        <Label Text="{Binding MyCreature.HungerText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="50" />
+        <Label Text="{Binding MyCreature.LoninessText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="30" />
+        <Label Text="{Binding MyCreature.ThirstyText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="10" />
+        <Label Text="{Binding MyCreature.BoredText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-10" />
+        <Label Text="{Binding MyCreature.TiredText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-30" />
+        <Label Text="{Binding MyCreature.StimulatedText}" FontSize="Title" Padding="30,10,30,10" TextColor="LemonChiffon" TranslationY="-50" />
         <Grid>
             <Image Source="LightEffect.png" TranslationY="-200" ScaleX="16" ScaleY="3" />
         </Grid>
-        <!--<Image Source="LightEffect.png" TranslationY="-400" ScaleX="1.6" ScaleY=".3" TranslationX="-90"/>-->
+        <Image Source="LightEffect.png" TranslationY="-400" ScaleX="1.6" ScaleY=".3" TranslationX="-90"/>
         
         <Frame BackgroundColor="AliceBlue" Padding="30" CornerRadius="0" TranslationY="0" ScaleY="1">
-            <!--<Label Text="Praise God" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontAttributes="Bold"/>-->
-            <!--<Button Text="Overview" CornerRadius="10" Clicked="Button_Clicked" />-->
+             not<Label Text="Praise God" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontAttributes="Bold"/>
+             not<Button Text="Overview" CornerRadius="10" Clicked="Button_Clicked" />
             <Grid>
+                
                 <StackLayout>
-                <Label Text="What does a mortal like you offer..." TextColor="Red" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"  TranslationY="-10" TranslationX="60" FontAttributes="Bold,Italic" ScaleY="1"/>
-                <Button Grid.Column="4" Text="Prayer" TranslationX="100" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Prayer" />
-                <Button Grid.Column="4" Text="Blood" TranslationX="-120" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Blood"/>
-                <Button Grid.Column="4" Text="Sheep" TranslationX="-200" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Feed"/>
-                <Button Grid.Column="4" Text="Sacri fice" TranslationX="-280" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Sacrifice"/>
-                <Button Grid.Column="4" Text="Performance" TranslationX="-360" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Show"/>
+                    <Label Text="What does a mortal like you offer..." TextColor="Red" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"  TranslationY="-10" TranslationX="60" FontAttributes="Bold,Italic" ScaleY="1"/>
+                    <Button Grid.Column="4" Text="Prayer" TranslationX="100" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Prayer" />
+                    <Button Grid.Column="4" Text="Blood" TranslationX="-120" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Blood"/>
+                    <Button Grid.Column="4" Text="Sheep" TranslationX="-200" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Feed"/>
+                    <Button Grid.Column="4" Text="Sacri fice" TranslationX="-280" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Sacrifice"/>
+                    <Button Grid.Column="4" Text="Performance" TranslationX="-360" TranslationY="-15" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Show"/>
                 </StackLayout>
             </Grid>
         </Frame>
         <Image Source="God.png" TranslationY="-650" TranslationX="0" ScaleY="1" ScaleX="1"/>
+    
+    </StackLayout>-->
+    
+    <StackLayout>
+        <StackLayout>
+            <Image Source="Thunder.png" AnchorY="0" ScaleY="1.5" Opacity="1" x:Name="Clouds"/>
+        </StackLayout>
+        <Image Source="God.png" TranslationY="-250"/>
+        <Image Source="StonePlate2.png" TranslationX="-55" ScaleY="1.7" ScaleX=".85" AnchorY="-1" TranslationY="-340"/>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="0,-150,30,0" ScaleX=".8" AnchorX="0" TranslationY="-230">
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="HungerXMALtxt"/>
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="LonelinessXMALtxt"/>
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="ThirstXMALtxt"/>
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="BoredomXMALtxt"/>
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="TiredXMALtxt"/>
+            <Label Text="" FontSize="Title" TextColor="#f6de56" FontAttributes="Bold" HorizontalTextAlignment="Center" x:Name="StimulatedXMALtxt"/>
+        </StackLayout>
+        <Grid VerticalOptions="EndAndExpand" Padding="5,0,0,10" TranslationY="-215">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="What does a mortal like you offer..." TextColor="OrangeRed" Grid.Column="0" Grid.ColumnSpan="5"  TranslationY="-20" TranslationX="100" FontAttributes="Bold,Italic" ScaleY="1"  />
+            <Button Grid.Column="0" Text="Praise" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Prayer" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            <Button Grid.Column="1" Text="Blood" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Blood" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            <Button Grid.Column="2" Text="Sheep" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Feed" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            <Button Grid.Column="3" Text="Perfor-mance" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Show" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            <Button Grid.Column="4" Text="Sacri- fice" FontSize="12" FontAttributes="Bold" Clicked="Button_Clicked_Sacrifice" CornerRadius="150" BackgroundColor="AliceBlue"/>
+            
+        </Grid>
+        <Image Source="LightEffect.png" TranslationX="0" TranslationY="-800" ScaleX="5" ScaleY="5" x:Name="DefeatIMG" IsVisible="false"/>
+        <Label Text="GOD KILLED YOU" HorizontalTextAlignment="Center" TextColor="red" FontAttributes="Bold" FontSize="40" TranslationY="-1040" x:Name="DefeatTXT" TranslationX="0" IsVisible="false"/>
+        <Button Text="Retry?" TranslationY="-800" BackgroundColor="#f6de56" BorderColor="White" TextColor="White" FontSize="30" FontAttributes="Bold" Clicked="Retry_Clicked" x:Name="Retry" IsVisible="false"/>
     </StackLayout>
-
 </ContentPage>

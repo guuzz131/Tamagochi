@@ -36,6 +36,8 @@ namespace Tamagucci
             var wakeTime = DateTime.Now;
 
             TimeSpan timeAsleep = wakeTime - sleepTime;
+
+            Preferences.Set("TimeAsleep", timeAsleep.TotalHours);
         }
     }
 }
